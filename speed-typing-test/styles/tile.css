@@ -1,0 +1,36 @@
+.tile {
+    flex-basis: 280px;
+    box-sizing: border-box;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 34px 30px 34px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 500;
+
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.9;
+    transform: translateY(20px);
+    transition: all 0.2s ease-in-out;
+}
+
+.tile__visible {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    transform: translateY(0px);
+}
+
+.tile__heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.tile__value {
+    font-size: 30px;
+}
